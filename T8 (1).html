@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            background-color: lightblue;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: lightgray;
+        }
+
+        li:hover > ul.submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <ul class="submenu">
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <!-- Add more sub-menu items as needed -->
+                </ul>
+            </li>
+            <li>
+                <a href="#">Products</a>
+                <ul class="submenu">
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <!-- Add more sub-menu items as needed -->
+                </ul>
+            </li>
+            <!-- Add more top-level menu items as needed -->
+        </ul>
+    </nav>
+</body>
+</html>
